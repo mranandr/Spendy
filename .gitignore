@@ -1,0 +1,36 @@
+# ── Whole folders (local / not versioned) ──────────────────────────
+supabase/          # DB migrations — run manually in Supabase SQL editor
+client/            # Expo mobile app (has its own .gitignore when tracked separately)
+
+# ── Secrets & env ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python (server) ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# ── Node (if anything at repo root) ──────────────────────────────────
+node_modules/
+
+# ── IDE / OS ───────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Logs & temp ──────────────────────────────────────────────────────
+*.log
+tmp/
+temp/
